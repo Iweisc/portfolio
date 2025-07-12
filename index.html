@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Lewis | Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loading-overlay">
+    <div class="loader"></div>
+  </div>
+  
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="intro-section">
+          <div class="profile-info">
+            <img src="https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif" alt="Profile" class="profile-pic">
+            <div class="intro-text">
+              <h1>Lewis</h1>
+              <h2>Web Developer</h2>
+              <p><i class="fas fa-map-marker-alt"></i> Bangladesh</p>
+              <p class="tagline">I make websites</p>
+            </div>
+          </div>
+          
+          <div class="about-brief">
+            <p>I build websites using MERN stack. I enjoy fixing problems and building projects.</p>
+          </div>
+          
+          <div class="cta-social">
+            <div class="cta-buttons">
+              <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/Iweisc" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="mailto:coderzawad@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://discord.gg/w5Pr89PnV4" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-preview">
+          <div class="skills-block">
+            <h3>Frontend</h3>
+            <div class="skills-icons">
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=html" alt="HTML"><p>HTML</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=css" alt="CSS"><p>CSS</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"><p>JS</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"><p>TS</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=react" alt="React"><p>React</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind"><p>Tailwind</p></span>
+            </div>
+          </div>
+          
+          <div class="skills-block">
+            <h3>Backend</h3>
+            <div class="skills-icons">
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js"><p>Node.js</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=express" alt="Express"><p>Express</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB"><p>MongoDB</p></span>
+            </div>
+          </div>
+          
+          <div class="skills-block">
+            <h3>Tools</h3>
+            <div class="skills-icons">
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=git" alt="Git"><p>Git</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><p>GitHub</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=neovim" alt="Neovim"><p>Neovim</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=figma" alt="Figma"><p>Figma</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel"><p>Vercel</p></span>
+              <span class="skill-icon"><img src="https://skillicons.dev/icons?i=netlify" alt="Netlify"><p>Netlify</p></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <div class="nav-container">
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>I build websites using React, Node.js, Express and MongoDB. I make websites that work well on all devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="tab-container">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="work">Work Experience</button>
+            <button class="tab-btn" data-tab="education">Education</button>
+          </div>
+          
+          <div class="tab-content active" id="work">
+            <div class="timeline-item">
+              <h3>Web Developer</h3>
+              <p class="timeline-meta">Brain Station 23 • 2021 - Present</p>
+              <p>Built websites using React, Node.js, and MongoDB. Made websites work on phones, tablets and computers.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Frontend Developer</h3>
+              <p class="timeline-meta">Tech Village • 2019 - 2021</p>
+              <p>Made website interfaces using HTML, CSS, and JavaScript. Worked with designers to build websites.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Freelance Web Developer</h3>
+              <p class="timeline-meta">Self-employed • 2018 - 2019</p>
+              <p>Developed custom websites for small businesses and individuals. Specialized in responsive design and e-commerce solutions.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Web Development Intern</h3>
+              <p class="timeline-meta">TechSolutions Ltd • 2018</p>
+              <p>Assisted senior developers with front-end tasks, learned version control workflows, and contributed to client projects.</p>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="education">
+            <div class="timeline-item">
+              <h3>Computer Science Degree</h3>
+              <p class="timeline-meta">BUET • 2015 - 2019</p>
+              <p>Bachelor's degree in Computer Science with focus on web development.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Web Development Course</h3>
+              <p class="timeline-meta">Programming Hero • 2019</p>
+              <p>12-week program covering web development technologies.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Full Stack Development Certification</h3>
+              <p class="timeline-meta">freeCodeCamp • 2018</p>
+              <p>Completed 1,800 hours of coursework covering front-end and back-end technologies.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>UI/UX Design Workshop</h3>
+              <p class="timeline-meta">Design Academy • 2017</p>
+              <p>Intensive 2-month workshop on user interface design principles and prototyping tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fuserupload%2F43970858%2Ffile%2Foriginal-5c6b71ac8b0e7e1bb3fd60ea420922ce.png%3Fresize%3D%257Bwidth%257Dx%257Bheight%257D%26vertical%3Dcenter&f=1&nofb=1&ipt=dd9d10afd2fbf58cd265347d1b034ad2e15ca10b930d68c8e6975382d373fee6" alt="Online Store">
+            </div>
+            <div class="project-info">
+              <h3>Online Store</h3>
+              <p>An online store built with React, Node.js, Express, and MongoDB.</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F9to5mac.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F06%2FTasks-App-iOS.png&f=1&nofb=1&ipt=f6fc13275c12f3b9d8cecd55c4ecb63b5b5998d09970d7f7a76e31648128349d" alt="Task App">
+            </div>
+            <div class="project-info">
+              <h3>Task App</h3>
+              <p>A task management app built with React and Firebase.</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Firebase</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2Ff1%2Fea%2F4cf1ea9f07ab8753f4fd395947268b4d.png&f=1&nofb=1&ipt=53ffc6783b3f6bf09bd3acd0225c3d0c7d3b10066f91b70f305b9343654f3387" alt="Stats Dashboard">
+            </div>
+            <div class="project-info">
+              <h3>Stats Dashboard</h3>
+              <p>A dashboard for social media stats built with TypeScript and Chart.js.</p>
+              <div class="project-tags">
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>Chart.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Lewis delivered our e-commerce website ahead of schedule. His attention to detail and responsive design skills helped us increase mobile conversions by 40%. He was always available to answer questions and made the entire process smooth.</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="testimonial-img">
+              <div class="testimonial-info">
+                <h4>Robert Chen</h4>
+                <p>CEO at TechRetail</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Working with Lewis was a game-changer for our startup. He built our dashboard application with clean code that's easy to maintain. His knowledge of React and MongoDB helped us implement features we didn't think were possible within our budget.</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="testimonial-img">
+              <div class="testimonial-info">
+                <h4>Sarah Johnson</h4>
+                <p>CTO at DataViz Solutions</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>I hired Lewis to redesign my photography portfolio website. The result was beyond my expectations. Not only is the site visually stunning, but it loads incredibly fast, which is crucial for showcasing high-quality images. His responsive design makes my work look great on any device.</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" class="testimonial-img">
+              <div class="testimonial-info">
+                <h4>Miguel Sanchez</h4>
+                <p>Professional Photographer</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Lewis helped us migrate our legacy system to a modern MERN stack application. His communication was excellent throughout the project, and he provided detailed documentation that made onboarding our team very straightforward. We've already hired him for phase two of our digital transformation.</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Client" class="testimonial-img">
+              <div class="testimonial-info">
+                <h4>Aisha Patel</h4>
+                <p>Product Manager at GlobalTech</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:coderzawad@gmail.com">coderzawad@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-discord"></i>
+              <a href="https://discord.gg/w5Pr89PnV4" target="_blank">Join my Discord</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lewis. All rights reserved.</p>
+      <p class="quote">"Time is money" - Benjamin Franklin</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
