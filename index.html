@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
   
@@ -25,7 +26,7 @@
           </div>
           
           <div class="about-brief">
-            <p>I build websites using MERN stack. I enjoy fixing problems and building projects.</p>
+            <p>I am Lewis. I enjoy building and seeing you go from 0-1 or 1-100. Let's turn your idea's into reality!</p>
           </div>
           
           <div class="cta-social">
@@ -35,7 +36,6 @@
             <div class="social-links">
               <a href="https://github.com/Iweisc" target="_blank"><i class="fab fa-github"></i></a>
               <a href="mailto:coderzawad@gmail.com"><i class="fas fa-envelope"></i></a>
-              <a href="https://discord.gg/w5Pr89PnV4" target="_blank"><i class="fab fa-discord"></i></a>
             </div>
           </div>
         </div>
@@ -88,6 +88,7 @@
           <li><a href="#about" class="active">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#activity">My Activity</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -100,7 +101,7 @@
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-          <p>I build websites using React, Node.js, Express and MongoDB. I make websites that work well on all devices.</p>
+          <p>I am Lewis. I enjoy building and seeing you go from 0-1 or 1-100. Let's turn your idea's into reality!</p>
         </div>
       </div>
     </section>
@@ -170,6 +171,10 @@
           <div class="project-card">
             <div class="project-image">
               <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fuserupload%2F43970858%2Ffile%2Foriginal-5c6b71ac8b0e7e1bb3fd60ea420922ce.png%3Fresize%3D%257Bwidth%257Dx%257Bheight%257D%26vertical%3Dcenter&f=1&nofb=1&ipt=dd9d10afd2fbf58cd265347d1b034ad2e15ca10b930d68c8e6975382d373fee6" alt="Online Store">
+              <div class="private-repo-badge">
+                <i class="fab fa-github"></i>
+                Private Repository
+              </div>
             </div>
             <div class="project-info">
               <h3>Online Store</h3>
@@ -185,6 +190,10 @@
           <div class="project-card">
             <div class="project-image">
               <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F9to5mac.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F06%2FTasks-App-iOS.png&f=1&nofb=1&ipt=f6fc13275c12f3b9d8cecd55c4ecb63b5b5998d09970d7f7a76e31648128349d" alt="Task App">
+              <div class="private-repo-badge">
+                <i class="fab fa-github"></i>
+                Private Repository
+              </div>
             </div>
             <div class="project-info">
               <h3>Task App</h3>
@@ -200,6 +209,10 @@
           <div class="project-card">
             <div class="project-image">
               <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2Ff1%2Fea%2F4cf1ea9f07ab8753f4fd395947268b4d.png&f=1&nofb=1&ipt=53ffc6783b3f6bf09bd3acd0225c3d0c7d3b10066f91b70f305b9343654f3387" alt="Stats Dashboard">
+              <div class="private-repo-badge">
+                <i class="fab fa-github"></i>
+                Private Repository
+              </div>
             </div>
             <div class="project-info">
               <h3>Stats Dashboard</h3>
@@ -210,6 +223,17 @@
                 <span>Chart.js</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activity" class="section">
+      <div class="container">
+        <h2 class="section-title">My Activity</h2>
+        <div class="activity-content">
+          <div class="github-snake">
+            <img src="https://raw.githubusercontent.com/Iweisc/Iweisc/output/snake.svg" alt="GitHub Activity Snake" />
           </div>
         </div>
       </div>
@@ -323,10 +347,39 @@
               <i class="fas fa-envelope"></i>
               <a href="mailto:coderzawad@gmail.com">coderzawad@gmail.com</a>
             </div>
-            <div class="contact-item">
-              <i class="fab fa-discord"></i>
-              <a href="https://discord.gg/w5Pr89PnV4" target="_blank">Join my Discord</a>
-            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <h3>Send me a message</h3>
+            <form class="contact-form" id="contactForm">
+              
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn primary-btn submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+            
+            <div class="form-status" id="formStatus"></div>
           </div>
         </div>
       </div>
